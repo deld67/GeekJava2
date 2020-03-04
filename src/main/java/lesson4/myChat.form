@@ -1,56 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="lesson4.myChat">
-  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="498" height="400"/>
+      <xy x="20" y="67" width="500" height="51496"/>
     </constraints>
-    <properties/>
+    <properties>
+      <minimumSize width="500" height="300"/>
+      <name value="myChat"/>
+      <preferredSize width="500" height="300"/>
+      <toolTipText value="myChat"/>
+    </properties>
+    <clientProperties>
+      <html.disable class="java.lang.Boolean" value="false"/>
+    </clientProperties>
     <border type="none"/>
     <children>
-      <component id="78217" class="javax.swing.JLabel">
+      <grid id="595b8" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="135" height="18"/>
-          </grid>
+          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties>
-          <text value="Добро пожаловать в чат"/>
-        </properties>
-      </component>
-      <component id="9e586" class="javax.swing.JTextField" binding="inputText">
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="46d93" class="javax.swing.JTextField" binding="testInput">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="391a9" class="javax.swing.JButton" binding="Ok">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <label value="Ok"/>
+              <text value="Ok"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="bc30a" class="javax.swing.JList" binding="chatList">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="412" height="30"/>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="13" use-parent-layout="false">
+            <preferred-size width="100" height="80"/>
           </grid>
         </constraints>
         <properties/>
       </component>
-      <component id="4207d" class="javax.swing.JButton" binding="send">
+      <component id="f9ab1" class="javax.swing.JList" binding="userList">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Button"/>
-        </properties>
-      </component>
-      <component id="e86c4" class="javax.swing.JTextArea" binding="chatArea">
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="412" height="284"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="8" use-parent-layout="false">
+            <preferred-size width="20" height="80"/>
           </grid>
         </constraints>
         <properties/>
-      </component>
-      <component id="9f72b" class="javax.swing.JList" binding="usersList">
-        <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="50" height="25"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model/>
-        </properties>
       </component>
     </children>
   </grid>
